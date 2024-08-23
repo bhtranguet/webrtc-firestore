@@ -3,12 +3,12 @@
     "rules": "database.rules.json"
   },
   "hosting": {
+    "ssl": {
+      "cert": "certs/cert.pem",
+      "key": "certs/key.pem"
+    },
     "public": "public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
         "source": "**",
